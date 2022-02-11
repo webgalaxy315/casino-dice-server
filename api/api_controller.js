@@ -23,9 +23,9 @@ const getState = (num1, num2, roll) => {
 const getAmount = (num, reward, betAmount) => {
     let earnAmount = 0;
     if (reward == 1) {
-        earnAmount -= betAmount;
+        earnAmount = 0;
     } else if (reward == 2) {
-        earnAmount = betAmount * (98 / num) - betAmount;
+        earnAmount = betAmount * (98 / num);
     }
     return earnAmount;
 }
